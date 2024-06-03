@@ -1,0 +1,51 @@
+.authPanelMain
+{
+    margin-top: 50px;
+    max-width: 50%;
+    margin-inline: auto;
+}
+
+.authPanelMain h1
+{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.authForm
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    background: var(--secondary-dark);
+    border-radius: var(--radius-md);
+    padding: 28px;
+    border: 1px solid var(--border-color);
+}
+
+.formControl
+{
+    background: transparent;
+    border: none;
+}
+
+.formControl input
+{
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: var(--radius-md);
+    background: var(--dark);
+    border: 1px solid var(--light-border);
+    transition: all 0.5s;
+    color: var(--white);
+}
+
+.formControl input:focus
+{
+    border: 1px solid var(--accent);
+    box-shadow: none;
+    outline: none;
+}

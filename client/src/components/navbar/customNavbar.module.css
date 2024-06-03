@@ -1,0 +1,44 @@
+.navbar
+{
+    padding: 8px 20px !important;
+    background: var(--secondary-dark);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+}
+
+.navbarLogo
+{
+    font-size: 18px !important;
+    color: var(--accent) !important;
+    font-weight: 700;
+}
+
+.userInfo
+{
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    margin-right: 20px;
+}
+
+.userName
+{
+    margin: 0 0 0 10px;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.userPfp
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: block;
+    overflow: hidden;
+}
+
+.userPfp img
+{
+    width: 100%;
+    object-fit: cover;
+}

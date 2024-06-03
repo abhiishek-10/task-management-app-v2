@@ -1,0 +1,89 @@
+.userPanel
+{
+    margin-top: 30px;
+    background: var(--secondary-dark);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.userPanelInr
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.userProfileImg
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.userProfileImg img
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+.profileForm
+{
+    margin-top: 30px;
+    background: var(--secondary-dark);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    padding: 30px;
+}
+
+.profileFormInr input,
+.profileFormInr textarea
+{
+    background: var(--dark) !important;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--white) !important;
+    font-weight: 500;
+}
+
+
+label
+{
+    background: transparent !important;
+    color: var(--light-text) !important;
+}
+
+label::after
+{
+    background: transparent !important;
+}
+
+input
+{
+    transition: all 0.5s !important;
+}
+
+input:focus,
+textarea:focus
+{
+    box-shadow: none !important;
+    border: 1px solid #F3503450 !important;
+}
+
+select
+{
+    background-color: var(--dark) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--white) !important;
+    cursor: pointer;
+}
+
+select:focus
+{
+    box-shadow: none !important;
+}

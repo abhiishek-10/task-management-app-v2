@@ -1,0 +1,16 @@
+.taskShowcasePanel
+{
+    padding: 20px;
+    background: var(--dark);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    height: 100%;
+    overflow: auto;
+}
+
+.taskList
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
