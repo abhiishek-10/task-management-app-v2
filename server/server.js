@@ -6,7 +6,9 @@ const mongoose = require("mongoose");
 const app = express();
 
 // Allow requests from all origins
-app.use(cors());
+app.use(cors({
+  origin: 'https://task-management-app-v2-ui.vercel.app' 
+}));
 
 // Middleware
 app.use(bodyParser.json());
