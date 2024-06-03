@@ -6,9 +6,15 @@ const mongoose = require("mongoose");
 const app = express();
 
 // Allow requests from all origins
-app.use(cors({
-  origin: 'https://task-management-app-v2-ui.vercel.app' 
-}));
+// app.use(cors({
+//   origin: 'https://task-management-app-v2-ui.vercel.app' 
+// }));
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 // Middleware
 app.use(bodyParser.json());
