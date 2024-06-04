@@ -30,6 +30,10 @@ mongoose.connection.on(
   console.error.bind(console, "MongoDB connection error:")
 );
 
+app.get('/', (req, res) => {
+        res.send('Express JS on Vercel')
+    })
+
 // Routes
 app.use("/auth", require("./routes/auth"));
 app.use("/tasks", require("./routes/tasks"));
